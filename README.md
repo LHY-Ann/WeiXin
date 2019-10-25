@@ -1,29 +1,26 @@
 # sign
 
-## Project setup
+## 创建uni-app
 ```
-npm install
+vue create -p dcloudio/uni-preset-vue my-project
 ```
+此时，会提示选择项目模板，然后选择 hello uni-app
 
-### Compiles and hot-reloads for development
+### 启动dome
 ```
-npm run serve
+npm run dev:mp-weixin
 ```
-
-### Compiles and minifies for production
+然后打开微信开发者工具，将文件夹中的mp-weixin导入，即可看到效果
 ```
-npm run build
+|
+|__dist
+|  |
+|__|__dev
+|  |
+|__|___.sourcemap
+|  |
+|__|___mp-weixin
 ```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 注意
+- vue-cli 版本必须是3.x
+- cli 版本更新快于HBuilderX正式版。HBuilderX正式版所包含的uni-app编译器一般是在cli版发布一段时间并稳定后才会更新到HBuilderX正式版。
